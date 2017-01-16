@@ -1,0 +1,12 @@
+# sum.test
+ 
+package require tcltest
+namespace import ::tcltest::*
+ 
+# Software under test
+source /home/sai/TCL/Tcl_test/programs_to_be_tested/sum.tcl
+ 
+test sum_addTwoPositiveNumbers {} -body {
+sum 4 9
+} -result 13
+ 
